@@ -462,15 +462,15 @@ export default function Documentos() {
                             <Typography fontWeight={600}>
                                 {caseData.excluido == "SIM" ? "" : "não"} está excluído
                             </Typography>{" "}
-                            como pai da criança testada. Baseado nos resultados obtidios e listados
+                            como pai da criança testada. Baseado nos resultados obtidos e listados
                             acima a{" "}
                             <Typography fontWeight={600}>
                                 probabilidade de paternidade é de{" "}
                                 {caseData.probabilidade == 1 ? "99,999999" : caseData.probabilidade}
                                 %
                             </Typography >
-                            . Esta probabilidade de paternidade é calculada comparado indivíduos
-                            aleatório não relacionados da população caucasiana (assume-se a
+                            . Esta probabilidade de paternidade é calculada comparando indivíduos
+                            aleatórios não relacionados da população caucasiana (assume-se a
                             probabilidade inicial de 0.50).
                         </Typography>
                         <Stack
