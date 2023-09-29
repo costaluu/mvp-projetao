@@ -415,7 +415,7 @@ export default function Documentos() {
                         <Typography level="body-lg" fontWeight={600}>
                             Metodologia
                         </Typography>
-                        <Typography level="body-md">
+                        <Typography level="body-md" style={{ textAlign: 'justify' }}>
                             A técnica utilizada é a PCR, que, aliada aos mais modernos equipamentos,
                             faz com que a metodologia aplicada seja a mais rápida e eficiente em
                             termos de identificação humana, tendo sido validada internacionalmente.
@@ -457,27 +457,27 @@ export default function Documentos() {
                         <Typography level="body-lg" fontWeight={600}>
                             Interpretação
                         </Typography>
-                        <Typography level="body-md">
+                        <Typography level="body-md" style={{ textAlign: 'justify' }}>
                             O suposto pai{" "}
                             <Typography fontWeight={600}>
                                 {caseData.excluido == "SIM" ? "" : "não"} está excluído
                             </Typography>{" "}
-                            como pai da criança testada. Baseado nos resultados obtidios e listados
+                            como pai da criança testada. Baseado nos resultados obtidos e listados
                             acima a{" "}
                             <Typography fontWeight={600}>
                                 probabilidade de paternidade é de{" "}
                                 {caseData.probabilidade == 1 ? "99,999999" : caseData.probabilidade}
                                 %
-                            </Typography>
-                            . Esta probabilidade de paternidade é calculada comparado indivíduos
-                            aleatório não relacionados da população caucasiana (assume-se a
+                            </Typography >
+                            . Esta probabilidade de paternidade é calculada comparando indivíduos
+                            aleatórios não relacionados da população caucasiana (assume-se a
                             probabilidade inicial de 0.50).
                         </Typography>
                         <Stack
                             direction="row"
                             sx={{ width: "100%", marginBottom: "2rem" }}
                             spacing={1}>
-                            <Typography sx={{ width: "50%" }} level="body-sm">
+                            <Typography sx={{ width: "50%" }} level="body-sm" style={{ textAlign: 'justify' }}>
                                 Nota: Como as amostras não foram recolhidas sob um processo
                                 devidamente documentado por uma terceira entidade neutra e o
                                 laboratório não pode verificar a origem das amostras, estes
@@ -486,7 +486,11 @@ export default function Documentos() {
                                 pessoas em teste que contam neste relatório foram fornecidos pelo
                                 cliente e não podem ser verificados.
                             </Typography>
-                            <Typography sx={{ width: "50%" }} level="body-sm">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <Typography sx={{ width: "50%" }} level="body-sm" style={{ textAlign: 'justify' }}>
                                 O laboratório não assume responsabilidade por informação incorreta
                                 ou incompleta. Baseado nas amostras recebidas das partes em teste,
                                 em que as identidades não podem ser verificadas, o diretor do
